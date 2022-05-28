@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:screenOrientation="portrait"
+    tools:context=".DecryptText">
+
+    <!--<EditText
+        android:id="@+id/Encrypt_text"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Encrypt text"
+        android:inputType="textPersonName"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#FF9C9090"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id1" />-->
+
+    <TextView
+        android:id="@+id/Decrypt_text"
+        android:layout_width="570dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/fields"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Decrypt text"
+        android:longClickable="false"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#9C9090"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id1" />
+
+    <EditText
+        android:id="@+id/unique_id1"
+        android:layout_width="570dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Unique ID"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#FF9C9090"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="523dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="OnClickDecrypt"
+        android:text="Decrypt"
+        android:textColor="#FF9C9090"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Decrypt_text"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

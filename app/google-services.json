@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "833094731507",
+    "project_id": "ciphermessage-57ab4",
+    "storage_bucket": "ciphermessage-57ab4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833094731507:android:eb4a5a7bba3fa63d44d986",
+        "android_client_info": {
+          "package_name": "com.rau.ciphermessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833094731507-qaco496qpa0u7p8pl8vlt476sdg0un1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaOjMtBD_kRiIO40cctn7wXZ6P_uLoTQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833094731507-qaco496qpa0u7p8pl8vlt476sdg0un1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

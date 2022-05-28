@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/unique_id"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/fields"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Unique id(for decrypt text)"
+        android:longClickable="false"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#9C9090"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Encrypt" />
+
+    <TextView
+        android:id="@+id/Encrypt"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/fields"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="SHA-256"
+        android:longClickable="false"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#FF9C9090"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Message" />
+
+    <EditText
+        android:id="@+id/Text_Message"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Your text"
+        android:inputType="textPersonName"
+        android:textColor="#FF9C9090"
+        android:textColorHint="#FF9C9090"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!---<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:layout_marginTop="100dp"
+        android:background="@drawable/fields"
+        android:hint="Algorithms"
+        android:textColorHint="#FF9C9090"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id"
+        tools:layout_editor_absoluteX="16dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fields"
+            android:inputType="none"
+            android:textColor="@color/text" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="333dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="OnClickSave"
+        android:text="Encrypt"
+        android:textColor="#FF9C9090"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/fields"
+        android:hint="Encrypt or Decrypt"
+        android:textColorHint="#FF9C9090"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fields"
+            android:inputType="none"
+            android:textColor="@color/text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
